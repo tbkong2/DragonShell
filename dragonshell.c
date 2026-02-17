@@ -253,7 +253,6 @@ int main(int argc, char **argv) {
       if (access(args[0], X_OK)==0) {
         if (pipeflag == 0) {
           pid_t pid = fork();
-                
           if (pid > 0) { // parent process             
             if (background == 1) { //background process
               add_process(pid, R, command);
